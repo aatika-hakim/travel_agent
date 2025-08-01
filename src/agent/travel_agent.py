@@ -229,16 +229,6 @@ async def generate_budget_advice():
     response += "**Transportation Savings:**\n"
     response += "• Use public transportation\n"
     response += "• Book flights during off-peak seasons\n"
-    response += "• Consider budget airlines\n\n"
-    response += "**Food Savings:**\n"
-    response += "• Eat at local markets and street food\n"
-    response += "• Cook some meals if you have kitchen access\n"
-    response += "• Avoid tourist trap restaurants\n\n"
-    response += "**Activity Savings:**\n"
-    response += "• Look for free walking tours\n"
-    response += "• Visit museums on free days\n"
-    response += "• Use city passes for multiple attractions\n\n"
-    response += "What's your target budget? I can suggest specific destinations that fit your price range!"
     return response
 
 async def generate_sample_itinerary():
@@ -268,7 +258,7 @@ async def generate_sample_itinerary():
     response += "• Day trip to Gili Islands\n"
     response += "• Snorkeling with sea turtles\n"
     response += "• Beach relaxation\n"
-    response += "• Return to Bali mainland\n\n"
+
     response += "**Day 6: Wellness & Shopping**\n"
     response += "• Spa treatment at luxury resort\n"
     response += "• Shopping at Ubud Art Market\n"
@@ -291,37 +281,11 @@ async def generate_accommodation_recommendations():
     response += "**Boutique Hotels ($$):**\n"
     response += "• Unique, personalized experiences\n"
     response += "• Perfect for: Couples, small groups\n"
-    response += "• Price range: $150-400 per night\n\n"
-    response += "**Resorts ($$-$$$):**\n"
-    response += "• All-inclusive options available\n"
-    response += "• Perfect for: Families, beach destinations\n"
-    response += "• Price range: $200-600 per night\n\n"
-    response += "**Hostels & Budget ($):**\n"
-    response += "• Social atmosphere, great for solo travelers\n"
-    response += "• Perfect for: Backpackers, budget travelers\n"
-    response += "• Price range: $20-80 per night\n\n"
-    response += "**Vacation Rentals ($$):**\n"
-    response += "• Home-like experience, kitchen facilities\n"
-    response += "• Perfect for: Families, longer stays\n"
-    response += "• Price range: $100-400 per night\n\n"
-    response += "What type of accommodation interests you most?"
+
     return response
 
 async def generate_food_recommendations():
     """Generate food and dining recommendations"""
-    response = "🍽️ **Culinary Adventure Tips**\n\n"
-    response += "**Must-Try Local Experiences:**\n"
-    response += "• Street food tours\n"
-    response += "• Cooking classes with local chefs\n"
-    response += "• Market visits and food sampling\n"
-    response += "• Wine and cheese tastings\n\n"
-    response += "**Budget-Friendly Options:**\n"
-    response += "• Local markets and food stalls\n"
-    response += "• Lunch specials at restaurants\n"
-    response += "• Happy hour deals\n"
-    response += "• Self-catering for some meals\n\n"
-    response += "**Fine Dining Experiences:**\n"
-    response += "• Michelin-starred restaurants\n"
     response += "• Rooftop dining with city views\n"
     response += "• Chef's table experiences\n"
     response += "• Wine pairing dinners\n\n"
@@ -362,22 +326,7 @@ async def generate_transport_advice():
     response += "• Use flight comparison websites\n"
     response += "• Consider alternative airports\n"
     response += "• Sign up for fare alerts\n\n"
-    response += "**Local Transportation:**\n"
-    response += "• Research public transport options\n"
-    response += "• Consider city passes for unlimited travel\n"
-    response += "• Download local transport apps\n"
-    response += "• Learn basic transport phrases\n\n"
-    response += "**Alternative Transport:**\n"
-    response += "• Trains for scenic routes\n"
-    response += "• Ferries for island destinations\n"
-    response += "• Buses for budget travel\n"
-    response += "• Car rentals for flexibility\n\n"
-    response += "**Travel Insurance:**\n"
-    response += "• Covers flight cancellations\n"
-    response += "• Medical emergencies abroad\n"
-    response += "• Lost luggage protection\n"
-    response += "• Trip interruption coverage\n\n"
-    response += "Where are you planning to travel? I can give you specific transport advice!"
+
     return response
 
 def get_best_time(destination):
@@ -388,17 +337,7 @@ def get_best_time(destination):
         "Hawaii": "April to October (avoid hurricane season)",
         "Santorini": "May to October (avoid winter rains)",
         "Paris": "April to June, September to October",
-        "Tokyo": "March to May (cherry blossoms), September to November",
-        "New York": "April to June, September to November",
-        "London": "March to May, September to November",
-        "Swiss Alps": "December to March (skiing), June to September (hiking)",
-        "Rocky Mountains": "June to September (summer), December to March (skiing)",
-        "New Zealand": "December to February (summer), June to August (skiing)",
-        "Costa Rica": "December to April (dry season)",
-        "Kyoto": "March to May (cherry blossoms), October to November (fall colors)",
-        "Marrakech": "March to May, September to November (avoid summer heat)",
-        "Bora Bora": "May to October (dry season)",
-        "Seychelles": "April to May, October to November (shoulder season)"
+
     }
     return best_times.get(destination, "Year-round (check specific weather patterns)")
 
