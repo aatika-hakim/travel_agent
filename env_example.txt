@@ -1,0 +1,17 @@
+# AI Travel Agent Environment Variables
+
+# OpenAI API Key (optional - for enhanced AI responses)
+# Get your API key from: https://platform.openai.com/api-keys
+OPENAI_API_KEY=your_openai_api_key_here
+
+# Weather API Key (optional - for real-time weather data)
+# Get your API key from: https://openweathermap.org/api
+WEATHER_API_KEY=your_weather_api_key_here
+
+# Currency API Key (optional - for real-time exchange rates)
+# Get your API key from: https://exchangeratesapi.io/
+CURRENCY_API_KEY=your_currency_api_key_here
+
+# Application Settings
+DEBUG=False
+LOG_LEVEL=INFO 
