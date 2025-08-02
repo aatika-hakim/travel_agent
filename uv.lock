@@ -12,7 +12,6 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "beautifulsoup4" },
-    { name = "chainlit" },
     { name = "numpy" },
     { name = "openai" },
     { name = "pandas" },
